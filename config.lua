@@ -1,6 +1,23 @@
 Config = {}
 
-Config.Locations = {
+Config.UsingESX = true -- Do you use es_extended
+Config.ESXTriggers = {
+    main = 'esx:getSharedObject',
+    load = 'esx:playerLoaded',
+    logout = 'esx:playerLogout',
+    job = 'esx:setJob',
+}
+
+Config.UsingMulticharacter = false -- Are you using a multi character script with ESX
+
+Config.Police = 'sem' -- [ 'sem' / 'esx' / 'custom']
+Config.PoliceJobs = { -- A list of jobs that will be alerted if using ESX
+    'police',
+    'bcso',
+    'lspd'
+}
+
+Config.Locations = { -- To add more locations copy line 22-58 and paste it below the first location
 
     ['Yellow Jack'] = { -- Can be named anything
 

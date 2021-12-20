@@ -1,11 +1,11 @@
-RegisterServerEvent('CopNoti1')
-AddEventHandler('CopNoti1', function()
-    TriggerClientEvent('CopNoti1', -1)
+RegisterServerEvent('GangShootout:AlertPolice')
+AddEventHandler('GangShootout:AlertPolice', function(location)
+    TriggerClientEvent('GangShootout:AlertPolice', -1)
 end)
 
 Citizen.CreateThread(function()
 	while true do
-		PerformHttpRequest("https://api.github.com/repos/Hurstzy/GangShootout/releases/latest", CheckVersion, "GET")
+		PerformHttpRequest("https://api.github.com/repos/Hurstzy/GangShootout/releases/latest", VersionCheck, "GET")
 		Wait(3600000)
 	end
 end)
