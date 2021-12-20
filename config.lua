@@ -1,6 +1,6 @@
 Config = {}
 
-Config.UsingESX = true -- Do you use es_extended
+Config.UsingESX = false -- Do you use es_extended
 Config.ESXTriggers = {
     main = 'esx:getSharedObject',
     load = 'esx:playerLoaded',
