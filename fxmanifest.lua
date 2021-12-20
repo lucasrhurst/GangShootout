@@ -1,11 +1,11 @@
 fx_version 'cerulean'
 game 'gta5'
 
-version '1.0'
+version '1.2'
 
 client_scripts {
     'config.lua',
-    'util.lua',
+    'client/util.lua',
     'client/main.lua'
 }
 

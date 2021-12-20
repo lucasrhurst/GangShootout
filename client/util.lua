@@ -8,7 +8,7 @@ function PoliceAlert(location)
 	AddTextEntry('GangShootoutAdvancedNotification', 'A shootout has begun at ' .. location)
 	BeginTextCommandThefeedPost('GangShootoutAdvancedNotification')
 	EndTextCommandThefeedPostMessagetext('CHAR_CALL911', 'CHAR_CALL911', false, 1, '911 Call', 'Shots Fired')
-	EndTextCommandThefeedPostTicker(false, true)
+	EndTextCommandThefeedPostTicker(false, false)
 end
 
 function GetCurrentShootout()

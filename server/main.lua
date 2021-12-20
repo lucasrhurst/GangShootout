@@ -1,6 +1,6 @@
 RegisterServerEvent('GangShootout:AlertPolice')
 AddEventHandler('GangShootout:AlertPolice', function(location)
-    TriggerClientEvent('GangShootout:AlertPolice', -1)
+    TriggerClientEvent('GangShootout:AlertPolice', -1, location)
 end)
 
 Citizen.CreateThread(function()
